@@ -59,10 +59,11 @@ I'm learning Kotlin!
 **你的答案：**
 
 ```kotlin
- fun main() {
-    println("My name is weimeixiang")
-    println("My student ID is 2025003018")
-    println("I'm learning Kotlin!")
+fun main()
+{
+    println("My name is Guhuaisuo")
+    println("My student ID is 2025003027")
+    println("I am learning Kotlin!")
 }
 ```
 
@@ -88,8 +89,9 @@ fun main() {
 **你的答案：**
 
 ```kotlin
-fun main() {
-    println("Student 2025003018 says hello")
+fun main()
+{
+    println("Student 2025003027 says hello")
 }
 ```
 
@@ -108,8 +110,9 @@ fun main() {
 **你的答案：**
 
 ```kotlin
-fun main() {
-    println("Hello, my name is weimeixiang")
+fun main()
+{
+    println("Hello, my name is Guhuaisuo")
 }
 ```
 
@@ -135,8 +138,8 @@ Course: Kotlin
 
 ```kotlin
 fun main() {
-    println("ID: 2025003018") 
-    println("Name: weimeixiang") 
+    println("ID: 2025003027") 
+    println("Name: Guhuaisuo") 
     println("Course: Kotlin")
 }
 ```
@@ -157,7 +160,7 @@ fun main() (
 
 ```kotlin
 fun main() {
-     println("My ID ends with 8")
+    println("My ID ends with 7")
 }
 ```
 
@@ -186,7 +189,7 @@ You have 42 unread messages.
 
 ```kotlin
 fun main() {
-    val numberOfMessages = "18"  
+    val numberOfMessages = 27
     println("You have $numberOfMessages unread messages.")
 }
 ```
@@ -206,10 +209,11 @@ Package for zhangwei will arrive, tracking ID: 20231042.
 **你的答案：**
 
 ```kotlin
-fun main(){
-    val name: String = "weimeixiang"
-    val studentID: String="2025003018"
-    println("Package for $name will arrive, tracking ID: $studentID.")
+fun main()
+{
+    val name: String = "Guhuaisuo"
+    val studentID: String = "2025003027"
+    println("Package for $name will arrive,tracking ID:$studentID.")
 }
 ```
 
@@ -239,11 +243,12 @@ Total: 44
 **你的答案：**
 
 ```kotlin
-fun main(){
-    val studentName = "weimeixaing"  
-	val score     = 18        
-	val bonus     = 8          
-	val total     = score + bonus
+fun main()
+{
+    val studentName = "Guhuaisuo"
+    val score = 27          
+	val bonus = 7           
+	val total = score + bonus
     println("Name: $studentName")
     println("Score: $score, Bonus: $bonus")
     println("Total: $total")
@@ -269,14 +274,15 @@ fun main(){
 **你的答案：**
 
 ```kotlin
-fun main(){
-    val operandOne =10
-    val operandTwo =8
-    println("$operandOne + $operandTwo = ${operandOne+operandTwo}")
-    println("$operandOne - $operandTwo = ${operandOne-operandTwo}")
-    println("$operandOne * $operandTwo = ${operandOne*operandTwo}")
-    println("$operandOne / $operandTwo = ${operandOne/operandTwo}")
-    println("$operandOne % $operandTwo = ${operandOne%operandTwo}")
+fun main()
+{
+    val operandOne = 20
+    val operandTwo = 7
+    println("$operandOne + $operandTwo = ${operandOne + operandTwo}")
+    println("$operandOne - $operandTwo = ${operandOne - operandTwo}")
+    println("$operandOne * $operandTwo = ${operandOne * operandTwo}")
+    println("$operandOne / $operandTwo = ${operandOne / operandTwo}")
+    println("$operandOne % $operandTwo = ${operandOne % operandTwo}")
 }
 ```
 
@@ -310,11 +316,12 @@ Happy Birthday, zhangwei! You are now 4 years old!
 
 ```kotlin
 fun main() {
-    println(weimeixiangGreeting(age = 8))      
-    println(weimeixiangGreeting("weimeixiang", 1)) 
+    println(GuhuaisuoGreeting(age = 7))      
+    println(GuhuaisuoGreeting("Guhuaisuo", 2))   
 }
-fun weimeixiangGreeting(name: String = "2025003018", age: Int): String {
-    return "Happy Birthday, $name! You are now $age years old!"
+
+fun GuhuaisuoGreeting(name: String = "2025003027", age: Int): String {
+   return "Happy Birthday, $name! You are now $age years old!"
 }
 ```
 
@@ -350,16 +357,16 @@ Walking 4200 steps burns 168.0 calories
 
 ```kotlin
 fun main() {
-    val steps = 18 * 100                                    
-    val caloriesBurned = pedometerStepsToCalories(steps)
-    println("Walking $steps steps burns $caloriesBurned calories")
-}
-fun pedometerStepsToCalories(numberOfSteps: Int): Double {
-    val caloriesBurnedForEachStep = 0.04
-    val totalCaloriesBurned = numberOfSteps * caloriesBurnedForEachStep
-    return totalCaloriesBurned
+    val Steps = 27 * 100                                     
+    val caloriesBurned = PEDOMETERstepsTOcalories(Steps)
+    println("Walking $Steps steps burns $caloriesBurned calories")
 }
 
+fun PEDOMETERstepsTOcalories(NumberOFStepS: Int): Double {
+    val CaloriesBURNEDforEachStep = 0.04
+    val TotalCALORIESburned = NumberOFStepS * CaloriesBURNEDforEachStep
+    return TotalCALORIESburned
+}
 ```
 
 ---
@@ -388,15 +395,16 @@ fun main() {
 
 ```kotlin
 fun main() {
-    val first = 10    
-    val second = 18   
-    if (first > second) {
-        println(first)
-    } else if (second > first) {
-        println(second)
+    val first = 20    
+    val second = 27  
+    if (first> second){
+         println(first)
+    } 
+     else if (second > first){ 
+		 println(second) 
     } else {
-        println("First and second are equal.")
-    }
+  		 println("First and second are equal.")
+	}
 }
 ```
 
@@ -437,17 +445,18 @@ fun main() {
 **你的答案：**
 
 ```kotlin
-fun main() {
-    printWeimeixiangWeather("Ankara", 27, 31, 82)
-    printWeimeixiangWeather("Tokyo", 32, 36, 10)
-    printWeimeixiangWeather("Cape Town", 59, 64, 2)
-    printWeimeixiangWeather("Guatemala City", 50, 55, 7)
-}
-fun printWeimeixiangWeather(city: String, lowTemp: Int, highTemp: Int, rainChance: Int) {
+fun printGuhuaisuoWeather(city: String, low: Int, high: Int, rain: Int) {
     println("City: $city")
-    println("Low temperature: $lowTemp, High temperature: $highTemp")
-    println("Chance of rain: $rainChance%")
+    println("Low temperature: $low, High temperature: $high")
+    println("Chance of rain: $rain%")
     println()
+}
+
+fun main() {
+    printGuhuaisuoWeather("Ankara", 27, 31, 82)
+    printGuhuaisuoWeather("Tokyo", 32, 36, 10)
+    printGuhuaisuoWeather("Cape Town", 59, 64, 2)
+    printGuhuaisuoWeather("Guatemala City", 50, 55, 7)
 }
 ```
 
