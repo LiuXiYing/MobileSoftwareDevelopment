@@ -57,18 +57,14 @@ I'm learning Kotlin!
 ```
 
 **你的答案：**
-My name is Wanqxi
-My name is 202003033
-I'm learning Kotlin!
 
 ```kotlin
-fun main() {
-    println("My name is Wanqxi")
-	println("My name is 202003033")
-	println("I'm learning Kotlin!")
-}
-```
-
+fun main()
+{
+    println("My name is wangyuhuan")
+    println("My student ID is 2025003023")
+    println("I am learning Kotlin!")
+ }
 ---
 
 ## 题目 3：修正编译错误
@@ -89,16 +85,11 @@ fun main() {
 预期输出：`Student [学号] says hello`
 
 **你的答案：**
-Student 2025003033 says hello
 
 ```kotlin
 fun main() {
-
-    println("Student 2025003033 says hello")
-    
+    println("Student 2025003023 says hello")
 }
-```
-
 ---
 
 **练习 3.2**
@@ -112,13 +103,11 @@ fun main() {
 预期输出：`Hello, my name is [姓名]`
 
 **你的答案：**
-Hello, my name is 王茜
+
 ```kotlin
-// 请将修正后的完整代码粘贴至此
-fun main(){
-     print("Hello, my name is 王茜")
+fun main() {
+    println("Hello, my name is wangyuhuan")
 }
-```
 
 ---
 
@@ -139,17 +128,13 @@ Course: Kotlin
 ```
 
 **你的答案：**
-ID: 2025003033
-Name: 王茜
-Course: Kotlin
+
 ```kotlin
-// 请将修正后的完整代码粘贴至此
 fun main() {
-    println("ID: 2025003033") 
-    println("Name: 王茜") 
+    println("ID: 2025003023")
+    println("Name: wangyuhuan")
     println("Course: Kotlin")
 }
-```
 
 ---
 
@@ -164,14 +149,11 @@ fun main() (
 预期输出：`My ID ends with [A]`（将 `[A]` 替换为你**学号最后一位**数字）
 
 **你的答案：**
-My ID ends with 3
+
 ```kotlin
-// 请将修正后的完整代码粘贴至此
 fun main() {
     println("My ID ends with 3")
 }
-```
-
 ---
 
 ## 题目 4：字符串模板
@@ -194,14 +176,12 @@ You have 42 unread messages.
 ```
 
 **你的答案：**
-You have 33 unread messages.
+
 ```kotlin
-// 请将完整代码粘贴至此
 fun main() {
-    val numberOfMessages = 33  
+    val numberOfMessages = "23"  
     println("You have $numberOfMessages unread messages.")
 }
-```
 
 ---
 
@@ -216,15 +196,14 @@ Package for zhangwei will arrive, tracking ID: 20231042.
 ```
 
 **你的答案：**
-Package for Wangxi will arrive, tracking ID: 33
-```kotlin
-// 请将完整代码粘贴至此
-fun main() {
-    val WangxiDelivery = "33"
-    println("Package for Wangxi will arrive, tracking ID: " + WangxiDelivery )
-}
-```
 
+```kotlin
+fun main() {
+    val name: String = "wangyuhuan"
+    val studentID: String = "2025003023"
+    println("Package for $name will arrive, tracking ID: $studentID.")
+    
+}
 ---
 
 ## 题目 6：消息格式
@@ -250,24 +229,16 @@ Total: 44
 
 **你的答案：**
 
-Name: Wangxi
-Score: 33, Bonus: 3
-Total: 36
-
 ```kotlin
-// 请将完整代码粘贴至此
-fun main() {
-    val studentName = "Wangxi"  
-    val score     = 33      
-    val bonus     = 3        
-    val total     = score + bonus
-    println("Name: $studentName")
-    println("Score: $score, Bonus: $bonus")
-    println("Total: $total")
+fun main(){
+    val studentName = "wangyuhuan"
+    val score     = 23
+	val bonus     = 3
+	val total     = score + bonus
+    println("Name:$studentName")
+    println("score:$score, bonus:$bonus")
+    println("total:$total ")
 }
-
-```
-
 ---
 
 ## 题目 7：实现基本数学运算
@@ -285,25 +256,18 @@ fun main() {
 ```
 
 **你的答案：**
-3 + 3 = 6
-3 - 3 = 0
-3 / 3 = 1
-3 * 3 = 9
-3 % 3 = 0
 
 ```kotlin
-// 请将完整代码粘贴至此
-fun main() {
-    val unreadCount = 3
-    val readCount = 3
-    println("$unreadCount + $readCount = ${unreadCount + readCount}")
-    println("$unreadCount - $readCount = ${unreadCount - readCount}")
-    println("$unreadCount / $readCount = ${unreadCount / readCount}")
-    println("$unreadCount * $readCount = ${unreadCount * readCount}")
-    println("$unreadCount % $readCount = ${unreadCount % readCount}")
+fun main(){
+   val unreadCount: Int = 20
+   val readCount: Int = 3
+    
+   println("$unreadCount + $readCount = ${unreadCount + readCount }")
+   println("$unreadCount - $readCount = ${unreadCount - readCount }")
+   println("$unreadCount * $readCount = ${unreadCount * readCount }")
+   println("$unreadCount / $readCount = ${unreadCount / readCount }")
+   println("$unreadCount % $readCount = ${unreadCount % readCount }")
 }
-```
-
 ---
 
 ## 题目 8：默认参数
@@ -331,19 +295,16 @@ Happy Birthday, zhangwei! You are now 4 years old!
 ```
 
 **你的答案：**
-hello 33,你现在 18 岁了
-hello Wangxi,你现在 22 岁了
-```kotlin
-// 请将完整代码粘贴至此
-fun main() {
-    println(WangxiGreeting(age = 18))
-    println(WangxiGreeting("Wangxi", 22))   
-}
-fun WangxiGreeting(name: String = "33", age: Int): String {
-     return "hello $name,你现在 $age 岁了"
-}
-```
 
+```kotlin
+fun main() {
+    println(wangyuhuanGreeting(age = 3))
+    println(wangyuhuanGreeting("wangyuhuan", 2))
+}
+
+fun wangyuhuanGreeting(name: String= "2025003023", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}
 ---
 
 ## 题目 9：计步器
@@ -376,18 +337,16 @@ Walking 4200 steps burns 168.0 calories
 
 ```kotlin
 fun main() {
-    val Steps = 3300                                     
+    val Steps = 23*100                                      
     val caloriesBurned = PEDOMETERstepsTOcalories(Steps)
     println("Walking $Steps steps burns $caloriesBurned calories")
 }
 
-fun PEDOMETERstepsTOcalories(NumberOFStepS: Int): Double
- {
+fun PEDOMETERstepsTOcalories(NumberOFStepS: Int): Double {
     val CaloriesBURNEDforEachStep = 0.04
     val TotalCALORIESburned = NumberOFStepS * CaloriesBURNEDforEachStep
     return TotalCALORIESburned
 }
-```
 
 ---
 
@@ -412,23 +371,19 @@ fun main() {
 ```
 
 **你的答案：**
-First and second are equal.
+
 ```kotlin
 fun main() {
-    val first = 33   
-    val second = 33  
-    if(first == second){
-        println("First and second are equal.")
-    }
-    else if(first > second){
+    val first = 20
+    val second = 23
+    if(first > second){
         println(first)
-    }
-    else{
+    }else if(first < second){
         println(second)
+    }else{
+        println("First and second are equal")
     }
 }
-```
-
 ---
 
 ## 题目 11：将重复代码移至一个函数中
@@ -466,21 +421,19 @@ fun main() {
 **你的答案：**
 
 ```kotlin
-// 请将完整代码粘贴至此
+fun printlnWangyuhuanWeather(city:String,low:Int,high:Int,rain:Int){
+    println("City:$city")
+    println("Low temperature: $low, High temperature: $high")
+    println("Chance of rain: $rain%")
+    println()
+}
+
 fun main() {
-    printWangxiWeather("Ankara",27,31,82)
-    printWangxiWeather("Tokyo",32,36,10)
-    printWangxiWeather("Cape Town",59,64,2)
-    printWangxiWeather("Guatemala City",50,55,7)
+    printlnWangyuhuanWeather("Ankara",27,31,82)
+    printlnWangyuhuanWeather("Tokyo",32,36,10)
+    printlnWangyuhuanWeather("Cape Town",59,64,2)
+    printlnWangyuhuanWeather("Guatemala City",50,55,7)
 }
-fun printWangxiWeather(City : String ,Lowtemperature : Int,Hightemperature : Int,Chance : Int){
-    println("City:$City")
-    println("Low temperature:$Lowtemperature")
-    println("High temperature:$Hightemperature")
-    println("Chance of rain:$Chance%")
-    println("")
-}
-```
 
 ---
 
