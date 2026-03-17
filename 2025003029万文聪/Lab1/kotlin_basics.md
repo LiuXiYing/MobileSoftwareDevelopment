@@ -13,13 +13,13 @@
 
 | 符号 | 含义 | 示例（学号 20231042，姓名 张伟） |
 |------|------|------|
-| `[姓名]` | 你的姓名拼音（全小写） | `张伟` |
-| `[学号]` | 你的完整学号 | `20231042` |
-| `A` | 学号**倒数第 1 位**数字 | `2` |
-| `B` | 学号**倒数第 2 位**数字 | `4` |
+| `[姓名]` | 你的姓名拼音（全小写） | `万文聪` |
+| `[学号]` | 你的完整学号 | `2022003029` |
+| `A` | 学号**倒数第 1 位**数字 | `9` |
+| `B` | 学号**倒数第 2 位**数字 | `2` |
 | `C` | 学号**倒数第 3 位**数字 | `0` |
-| `AB` | 学号**后两位**组成的整数 | `42` |
-| `BC` | 学号**倒数第 2、3 位**组成的整数 | `40` |
+| `AB` | 学号**后两位**组成的整数 | `29` |
+| `BC` | 学号**倒数第 2、3 位**组成的整数 | `20` |
 
 > ⚠️ 若某个值为 `0`，令其等于 `10`；若 `AB < 10`，令 `AB = AB + 10`，保证运算结果有意义。
 
@@ -57,6 +57,13 @@ I'm learning Kotlin!
 ```
 
 **你的答案：**
+fun main() {
+    val name = "万文聪"
+    val studentld = "2025003029"
+    println("My name is $name")
+    println("My student ID is $studentld")
+    println("I'm learning Kotlin!")
+}
 
 ---
 
@@ -80,6 +87,12 @@ fun main() {
 
 **你的答案：**
 
+```kotlin
+fun main() {
+    println("Student 2025003029 says hello")
+}
+```
+
 ---
 
 **练习 3.2**
@@ -93,6 +106,12 @@ fun main() {
 预期输出：`Hello, my name is [姓名]`
 
 **你的答案：**
+
+```kotlin
+fun main() {
+    println("Hello,my name is wanwencong")
+}
+```
 
 ---
 
@@ -114,6 +133,14 @@ Course: Kotlin
 
 **你的答案：**
 
+```kotlin
+fun main() {
+    println("ID:20250030129")
+    println("Name:wanwencong")
+    println("course:kotlin")
+}
+```
+
 ---
 
 **练习 3.4**
@@ -127,6 +154,12 @@ fun main() (
 预期输出：`My ID ends with [A]`（将 `[A]` 替换为你**学号最后一位**数字）
 
 **你的答案：**
+
+```kotlin
+fun main() {
+    println("My ID ends with 9")    
+}
+```
 
 ---
 
@@ -151,6 +184,13 @@ You have 42 unread messages.
 
 **你的答案：**
 
+```kotlin
+fun main() {
+    val numberOfMessages = 29
+    println("You have $numberOfMessages unread messages")    
+}
+```
+
 ---
 
 ## 题目 5：字符串串联
@@ -164,6 +204,13 @@ Package for zhangwei will arrive, tracking ID: 20231042.
 ```
 
 **你的答案：**
+
+```kotlin
+fun main() {
+    val wanwencongDelivery = "2025003029"
+    println("Package for wuyi will arrive, tracking ID: " + wanwencongDelivery + ".")
+}
+```
 
 ---
 
@@ -190,6 +237,19 @@ Total: 44
 
 **你的答案：**
 
+```kotlin
+fun main() {
+    val studentName = "wanwencong" 
+    val score = 29              
+    val bonus = 9              
+    val total = score + bonus   
+
+    println("Name: $studentName")
+    println("Score: $score, Bonus: $bonus")
+    println("Total: $total")
+}
+```
+
 ---
 
 ## 题目 7：实现基本数学运算
@@ -207,6 +267,18 @@ Total: 44
 ```
 
 **你的答案：**
+
+```kotlin
+fun main() {
+    val operandOne = 20
+    val operandTwo = 9
+    println("$operandOne + $operandTwo = ${operandOne + operandTwo}")
+    println("$operandOne - $operandTwo = ${operandOne - operandTwo}")
+    println("$operandOne / $operandTwo = ${operandOne / operandTwo}")
+    println("$operandOne * $operandTwo = ${operandOne * operandTwo}")
+    println("$operandOne % $operandTwo = ${operandOne % operandTwo}")
+}
+```
 
 ---
 
@@ -235,6 +307,17 @@ Happy Birthday, zhangwei! You are now 4 years old!
 ```
 
 **你的答案：**
+
+```kotlin
+fun main() {
+    println(zhangweiGreeting(age = 9))
+    println(zhangweiGreeting("wanwencong", 2))
+}
+
+fun zhangweiGreeting(name: String = "2025003029", age: Int): String {
+    return "Happy Birthday, $name! You are now $age years old!"
+}
+```
 
 ---
 
@@ -266,6 +349,19 @@ Walking 4200 steps burns 168.0 calories
 
 **你的答案：**
 
+```kotlin
+fun main() {
+    val steps = 92 * 100
+    val caloriesBurned = pedometerStepsToCalories(steps)
+    println("Walking $steps steps burns $caloriesBurned calories")
+}
+fun pedometerStepsToCalories(numberOfSteps: Int): Double {
+    val caloriesBurnedForEachStep = 0.04
+    val totalCaloriesBurned = numberOfSteps * caloriesBurnedForEachStep
+    return totalCaloriesBurned
+}
+```
+
 ---
 
 ## 题目 10：比较两个数字
@@ -289,6 +385,20 @@ fun main() {
 ```
 
 **你的答案：**
+
+```kotlin
+fun main() {
+    val first = 20  
+    val second = 92 
+    if (first > second) {
+        println(first)
+    } else if (second > first) {
+        println(second)
+    } else {
+        println("First and second are equal.")
+    }
+}
+```
 
 ---
 
@@ -325,6 +435,22 @@ fun main() {
 预期输出与原始代码相同，但重复逻辑需封装进你命名的函数中。
 
 **你的答案：**
+
+```kotlin
+fun main() {
+    printWuyiWeather("Ankara", 27, 31, 82)
+    printWuyiWeather("Tokyo", 32, 36, 10)
+    printWuyiWeather("Cape Town", 59, 64, 2)
+    printWuyiWeather("Guatemala City", 50, 55, 7)
+}
+
+fun printWuyiWeather(city: String, lowTemp: Int, highTemp: Int, rainChance: Int) {
+    println("City: $city")
+    println("Low temperature: $lowTemp, High temperature: $highTemp")
+    println("Chance of rain: $rainChance%")
+    println()
+}
+```
 
 ---
 
