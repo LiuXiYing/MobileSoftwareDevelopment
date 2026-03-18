@@ -210,8 +210,8 @@ Package for zhangwei will arrive, tracking ID: 20231042.
 
 ```kotlin
 fun main(){
-    val name="inxiaoyan"
-    val Id="2025003001"
+    val name = "inxiaoyan"
+    val Id  ="2025003001"
     println("Package for $name will arrive,tracking ID:$Id.")
 }
 ```
@@ -244,9 +244,9 @@ Total: 44
 ```kotlin
 fun main(){
     val studentName = "jinxiaoyan"
-    val score     = 1
-    val bonus     = 1      
-    val total     = score+ bonus
+    val score  = 1
+    val bonus  = 1      
+    val total  = score + bonus
     println("name:$studentName")
     println("Score:$score ,Bonus:$bonus")
     println("Total:$total")
@@ -273,13 +273,13 @@ fun main(){
 
 ```kotlin
 fun main(){
-    val operatorone=4
-    val operatortow=2
-    println("$operatorone+$operatortow=${operatorone+operatortow}")
-    println("$operatorone-$operatortow=${operatorone-operatortow}")
-    println("$operatorone/$operatortow=${operatorone/operatortow}")
-    println("$operatorone*$operatortow=${operatorone*operatortow}")
-    println("$operatorone%$operatortow=${operatorone%operatortow}")
+    val operatorone = 4
+    val operatortow = 2
+    println("$operatorone + $operatortow = ${operatorone+operatortow}")
+    println("$operatorone - $operatortow = ${operatorone-operatortow}")
+    println("$operatorone / $operatortow = ${operatorone/operatortow}")
+    println("$operatorone * $operatortow = ${operatorone*operatortow}")
+    println("$operatorone % $operatortow = ${operatorone%operatortow}")
     
 }
 ```
@@ -314,11 +314,11 @@ Happy Birthday, zhangwei! You are now 4 years old!
 
 ```kotlin
 fun main() {
-    println(zhangweiGreeting(age = 1))       // A 替换为你学号最后一位
-    println(zhangweiGreeting("jinxiaoyan", 0))   // [姓名] 替换为你的姓名拼音，B 替换为学号倒数第二位
+    println(jinxiaoyan(age = 1))       // A 替换为你学号最后一位
+    println(jinxiaoyan("jinxiaoyan", 0))   // [姓名] 替换为你的姓名拼音，B 替换为学号倒数第二位
 }
 
-fun zhangweiGreeting(name: String="2025003001", age: Int): String {
+fun jinxiaoyanGreeting(name: String = "2025003001", age: Int): String {
     // 请在此填写代码，为 name 添加默认值（默认值为你的学号字符串）并返回格式化祝语
     return "Happy Birthday,$name!You are now $age years old!"
 }
@@ -396,9 +396,9 @@ fun main() {
 fun main() {
     val first = 40    // 替换为你的实际数值
     val second = 42   // 替换为你的实际数值
-    val result=if(first>second){
+    val result = if(first>second){
         first
-    }else if(second>first){
+    }else if(second > first){
         second
     }else{
         "First and second are equal"
@@ -446,7 +446,7 @@ fun main() {
 
 ```kotlin
 // 封装天气信息打印的函数（李明专属）
-fun printjinxiaoyanWeather(
+fun printJinxiaoyanWeather(
     city: String,
     lowTemp: Int,
     highTemp: Int,
@@ -459,10 +459,10 @@ fun printjinxiaoyanWeather(
 }
 
 fun main() {
-    printjinxiaoyanWeather("Ankara", 27, 31, 82)
-    printjinxiaoyanWeather("Tokyo", 32, 36, 10)
-    printjinxiaoyanWeather("Cape Town", 59, 64, 2)
-    printjinxiaoyanWeather("Guatemala City", 50, 55, 7)
+    printJinxiaoyanWeather("Ankara", 27, 31, 82)
+    printJinxiaoyanWeather("Tokyo", 32, 36, 10)
+    printJinxiaoyanWeather("Cape Town", 59, 64, 2)
+    printJinxiaoyanWeather("Guatemala City", 50, 55, 7)
 }
 ```
 
