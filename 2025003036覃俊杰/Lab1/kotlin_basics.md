@@ -479,4 +479,3 @@ fun printQinjunjieWeather(city: String, low: Int, high: Int, rainChance: Int) {
 ## 参考资料
 
 - [Kotlin Playground](https://play.kotlinlang.org/)
-5
