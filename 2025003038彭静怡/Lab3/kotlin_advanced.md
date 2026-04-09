@@ -3,7 +3,7 @@
 ## 实验背景
 
 本次实验涵盖 Kotlin 编程的进阶语法，包括条件语句（`if/else`、`when`）、可空类型处理、类与对象、继承以及 Lambda 表达式。
-建议使用 [Kotlin Playground](https://play.kotlinlang.org/) 在线编写并运行代码，完成后将代码粘贴到对应代码块中提交。
+建议使用 [Kotlin Playground](https://play.kotlinlang.org/) 在线编写并运行代码，完成后将代码粘贴到对应代码块中提交
 
 ---
 
