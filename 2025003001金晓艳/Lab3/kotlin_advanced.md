@@ -462,3 +462,4 @@ fun auctionPrice(bid: Bid?, minimumPrice: Int): Int {
 /* 最新修复 Lab3 */
 // 2025003001金晓艳 Lab3作业提交
 // 2025003001金晓艳 | Lab3 最终提交
+// 2025003001金晓艳 Lab3作业提交
