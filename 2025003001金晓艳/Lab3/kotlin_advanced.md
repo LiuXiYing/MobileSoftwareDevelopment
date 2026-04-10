@@ -459,3 +459,4 @@ fun auctionPrice(bid: Bid?, minimumPrice: Int): Int {
 
 - [Kotlin Playground](https://play.kotlinlang.org/)
  
+/* 最新修复 Lab3 */
