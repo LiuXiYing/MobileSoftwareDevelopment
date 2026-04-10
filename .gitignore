@@ -2,6 +2,10 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+<<<<<<< HEAD
+=======
+.github
+>>>>>>> 6da71eef5f269a079f803a91198fce1097d16a18
 
 # Windows
 Thumbs.db

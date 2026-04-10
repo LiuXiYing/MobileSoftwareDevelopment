@@ -315,4 +315,8 @@ Item B is sold at 3000.
 
 ## 参考资料
 
+<<<<<<< HEAD
 - [Kotlin Playground](https://play.kotlinlang.org/)
+=======
+- ###### [Kotlin Playground](https://play.kotlinlang.org/)
+>>>>>>> 6da71eef5f269a079f803a91198fce1097d16a18
