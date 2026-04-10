@@ -302,28 +302,26 @@ Likes to climb. Has a referrer named Amanda, who likes to play tennis.
 **你的答案：**
 
 ```kotlin
-class Song(
-    val title: String,
-    val artist: String,
-    val releaseYear: Int,
-    val playCount: Int
-) {
-    val isPopular: Boolean
-        get() = playCount >= 1000
+fun main() {
+    val amanda = Person("Amanda", 33, "play tennis", null)
+    val atiqah = Person("Atiqah", 28, "climb", amanda)
+    
+    amanda.showProfile()
+    atiqah.showProfile()
+}
 
-    fun printDescription() {
-        println("$title, performed by $artist, was released in $releaseYear.")
+class Person(val name: String, val age: Int, val hobby: String?, val referrer: Person?) {
+    fun showProfile() {
+        println("Name: $name")
+        println("Age: $age")
+        
+        if (referrer == null) {
+            println("Likes to $hobby. Doesn't have a referrer.\n")
+        } else {
+            println("Likes to $hobby. Has a referrer named ${referrer.name}, who likes to ${referrer.hobby}.\n")
+        }
     }
 }
-
-
-fun main() {
-    val song = Song("Hello", "Adele", 2015, 50000)
-    song.printDescription()
-    println("Is popular: ${song.isPopular}")
-}
-
-
 ```
 
 ---
