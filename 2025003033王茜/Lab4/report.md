@@ -1,15 +1,15 @@
-## 1、应用界面结构说明
+## 一、应用界面结构说明
 整个应用采用 Jetpack Compose 声明式 UI 构建，界面结构非常清晰：
 1. MainActivity：应用入口，负责加载界面。
 2. DiceRollerApp：根布局函数，统一管理整个页面样式。
 3. DiceWithButtonAndImage：核心界面，包含：
-    一个 Image：显示骰子图片;
-    一个 Button：点击掷骰子;
-    一个 Column：垂直排列图片和按钮，让它们居中显示
+   -   一个 Image：显示骰子图片;
+   -    一个 Button：点击掷骰子;
+   -    一个 Column：垂直排列图片和按钮，让它们居中显示
 
 ---
 
-## 2、如何使用 Compose 状态保存骰子结果
+## 二、如何使用 Compose 状态保存骰子结果
 1. 使用 Compose 状态管理 来保存和更新骰子点数：
    ```
    var result by remember { mutableIntStateOf(1) }
@@ -20,7 +20,7 @@ mutableIntStateOf(1)：创建一个可观察的整数状态，默认值为 1；
 var result by：使用属性委托，让界面能自动感知数据变化并刷新。
 
 ---
-## 3、 如何根据点数切换图片资源
+## 三、 如何根据点数切换图片资源
 使用 when 表达式 根据 result 的值匹配对应图片：
 ```
 val imageResource = when(result) {
@@ -39,7 +39,7 @@ val imageResource = when(result) {
 - 最后用 else 保证 6 一定会显示
   
 ---
-## 4、设置了哪些断点，分别观察了什么
+## 四、设置了哪些断点，分别观察了什么
 我在以下关键位置设置断点：
 
 1. var result by remember { mutableIntStateOf(1) }
@@ -53,7 +53,7 @@ val imageResource = when(result) {
 
 
 ---
-## 5、Step Into、Step Over、Step Out 使用体会
+## 五、Step Into、Step Over、Step Out 使用体会
    - 调试界面刷新时，Step Over 最方便；
    - 想看状态如何更新时用 Step Into；
    - 函数看多了想返回用 Step Out。
@@ -61,7 +61,7 @@ val imageResource = when(result) {
    
    
 ---
-## 6、遇到的问题与解决过程
+## 六、遇到的问题与解决过程
 1、 问题 1：界面全黑 / 不显示
 - 原因：modifier 拼写错误 → moderfier
 - 解决：全部修正为 modifier
@@ -84,7 +84,8 @@ plaintext
 
 5、问题 5：图片不显示
 - 原因：图片文件名不匹配或未放入 drawable
-- 解决：确保有 dice_1 ~ dice_6 图片\
+- 解决：确保有 dice_1 ~ dice_6 图片
+  
 ---
-## 7、总结
+## 七、总结
 本次掷骰子应用使用 Jetpack Compose 完成，通过状态管理实现点数保存与界面刷新，使用 when 表达式切换图片，通过调试工具理解代码运行流程。过程中学习了 Compose 布局居中、状态管理、调试技巧等知识，成功完成了可交互、界面美观的掷骰子应用。
